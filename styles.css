@@ -3,6 +3,7 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  text-align: center;
 }
 
 .lightBaseColor{
@@ -14,29 +15,36 @@ p, address{
   font-optical-sizing: auto;
   font-weight: 300;
   font-style: normal;
-  font-size: 20px;
+  font-size: 1.3rem;
 }
 
 main{
   background-color: #1D1D1D;
-  height: calc(100vh - 50px);
+  height: calc(100vh - 3rem);
+  padding: 1.5rem;
 }
 
 footer{
-  height: 50px;
+  height: 3rem;
   background-color: #F3F3F3;
 }
 
 address{
-  padding-top: 60px;
+  padding-top: 3rem;
   font-weight: bold;
 }
 
 
 #description{
-  padding-top: 32px;
+  padding-top: 2rem;
 }
 
 #main-logo{
   height: 130px;
+}
+
+@media (max-width: 600px) {
+  #main-logo {
+    height: 80px;
+  }
 }
