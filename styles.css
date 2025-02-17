@@ -1,0 +1,42 @@
+.centeredDiv{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.lightBaseColor{
+  color: #F3F3F3;
+}
+
+p, address{
+  font-family: "Josefin Sans", serif;
+  font-optical-sizing: auto;
+  font-weight: 300;
+  font-style: normal;
+  font-size: 20px;
+}
+
+main{
+  background-color: #1D1D1D;
+  height: calc(100vh - 50px);
+}
+
+footer{
+  height: 50px;
+  background-color: #F3F3F3;
+}
+
+address{
+  padding-top: 60px;
+  font-weight: bold;
+}
+
+
+#description{
+  padding-top: 32px;
+}
+
+#main-logo{
+  height: 130px;
+}
