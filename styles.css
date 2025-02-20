@@ -20,8 +20,16 @@ p, address{
 
 main{
   background-color: #1D1D1D;
-  height: calc(100vh - 3rem);
+  min-height: calc(100vh - 3rem);
   padding: 1.5rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-image: url('./assets/square.png');
+  background-repeat: repeat;
+  background-size: 50px 50px;
+  animation: animatedBackground 50s linear infinite;
 }
 
 footer{
@@ -46,5 +54,22 @@ address{
 @media (max-width: 600px) {
   #main-logo {
     height: 80px;
+  }
+}
+
+
+@media only screen and (min-width : 820px) {
+  body {
+    animation: animatedBackground 60s linear infinite;
+  }
+}
+
+@keyframes animatedBackground {
+  from {
+    background-position: 0% 0%;
+  }
+
+  to {
+    background-position: 100% 100%;
   }
 }
